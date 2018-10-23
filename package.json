@@ -1,0 +1,58 @@
+{
+    "name": "weather-app",
+    "version": "1.0.0",
+    "description": "Training application",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --mode=production",
+        "start": "webpack-dev-server --mode=development --open",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/StOleg/weather-app.git"
+    },
+    "keywords": [
+        "weather"
+    ],
+    "author": "Oleg V",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/StOleg/weather-app/issues"
+    },
+    "homepage": "https://github.com/StOleg/weather-app#readme",
+    "dependencies": {
+        "@babel/polyfill": "^7.0.0",
+        "bootstrap": "^4.1.3",
+        "dotenv": "^6.1.0",
+        "history": "^4.7.2",
+        "prop-types": "^15.6.2",
+        "query-string": "^6.2.0",
+        "react": "^16.5.2",
+        "react-dom": "^16.5.2",
+        "react-redux": "^5.0.7",
+        "redux": "^4.0.1",
+        "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.1.2",
+        "@babel/core": "^7.1.2",
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-eslint": "^10.0.1",
+        "babel-jest": "^23.6.0",
+        "babel-loader": "^8.0.4",
+        "css-loader": "^1.0.0",
+        "eslint": "^5.7.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-react": "^7.11.1",
+        "jest": "^23.6.0",
+        "style-loader": "^0.23.1",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.9"
+    }
+}
