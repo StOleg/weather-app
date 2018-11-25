@@ -5,11 +5,11 @@ const config = {
 	entry: './src/index.js',
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'src/dist'),
+		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/dist/'
 	},
 	devServer: {
-		contentBase: path.resolve(__dirname, 'src'),
+		contentBase: path.resolve(__dirname, 'public'),
 		publicPath: '/dist/',
 		watchContentBase: false,
 		overlay: true
@@ -18,7 +18,7 @@ const config = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader'
 			},
@@ -27,6 +27,9 @@ const config = {
 				use: ['style-loader', 'css-loader']
 			}
 		]
+	},
+	resolve: {
+		extensions: ['.js', '.jsx']
 	}
 };
 

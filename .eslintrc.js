@@ -12,6 +12,7 @@ module.exports = {
         "plugin:import/errors",
         "plugin:import/warnings"
     ],
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -37,5 +38,12 @@ module.exports = {
             "always"
         ],
         "react/no-set-state": "off"
-    }
+    },
+    settings: {
+        'import/resolver': {
+          node: {
+            extensions: ['.js','.jsx']
+          }
+        },
+      }
 };

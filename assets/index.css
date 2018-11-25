@@ -1,0 +1,87 @@
+body {
+    color: #404040;
+    background: #d6d6dc;
+    font-family: cursive;
+}
+
+.app {
+    margin: 10px;
+}
+
+.cityName {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dayWeather {
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+}
+
+.cityName+.dayWeather {
+    border-width: 1px;
+}
+
+.dayDetails {
+    font-weight: bold;
+    padding: 15px 0;
+    border-style: solid;
+    border-width: 0 0 1px;
+}
+
+.hourlyDetails {
+    width: 12.5%;
+    display: inline-block;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+}
+
+.hourlyDetails span {
+    border-style: dotted;
+    border-width: 1px 0 0 0;
+}
+
+.dayDetails span, .hourlyDetails span  {
+    display: block;
+}
+
+.cityName, .dayDetails, .hourlyDetails span {
+    text-align: center;
+}
+
+.dayDetails+.hourlyDetails, .hourlyDetails span:first-child {
+    border: none;
+}
+
+.error_msg {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/*** SPINNER ***/
+.spinner_container {
+    z-index: 999999999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    opacity: 0.6;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #222;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    left: 45%;
+    top: 45%;
+    position: absolute;
+    opacity: 1;
+}
