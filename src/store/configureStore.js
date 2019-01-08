@@ -4,11 +4,11 @@ import rootReducer from '../reducers/rootReducer';
 
 const sagaMiddleware = createSagaMiddleware();
 export default function configureStore() {
-	return {
-		...createStore(
-			rootReducer,
-			applyMiddleware(sagaMiddleware)
-		),
-		runSaga: sagaMiddleware.run
-	};
+    return {
+        ...createStore(
+            rootReducer,
+            applyMiddleware(sagaMiddleware)
+        ),
+        runSaga: sagaMiddleware.run
+    };
 }
